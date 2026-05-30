@@ -10,6 +10,24 @@
 <link rel="canonical" href="https://yutaro-shimizu.github.io/tokyo-nature-walks/" />
 <meta name="robots" content="index, follow" />
 
+<!-- Google Search Console: paste the "HTML tag" verification meta here once you add the property. -->
+<!-- e.g. <meta name="google-site-verification" content="PASTE_TOKEN_HERE" /> -->
+
+<!-- Google Analytics (GA4). Paste your Measurement ID below to activate tracking; leave empty to disable. -->
+<script>
+  window.GA_MEASUREMENT_ID = ""; // e.g. "G-XXXXXXXXXX"
+  if (window.GA_MEASUREMENT_ID) {
+    var gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_MEASUREMENT_ID;
+    document.head.appendChild(gaScript);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', window.GA_MEASUREMENT_ID);
+  }
+</script>
+
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Tokyo Nature Walks" />
@@ -175,7 +193,7 @@
         </div>
       </article>
       <article class="step">
-        <div class="step__img"><img src="assets/img/photo-4017.jpg" alt="Guide and guest on a forest path framed by autumn colour" loading="lazy" /></div>
+        <div class="step__img"><img src="assets/img/photo-4019.jpg" alt="Red and orange autumn canopy along the forest trail" loading="lazy" /></div>
         <div class="step__body">
           <span class="step__num">04</span>
           <h3>Reflections &amp; your questions</h3>
@@ -200,7 +218,7 @@
     <button class="gallery__item" data-full="assets/img/photo-4022.jpg" data-cap="Autumn illumination over the pond"><img src="assets/img/thumb-4022.jpg" alt="Autumn illumination reflected in the pond at night" loading="lazy" /></button>
     <button class="gallery__item gallery__item--wide" data-full="assets/img/photo-4025.jpg" data-cap="Maples lit up on an autumn evening"><img src="assets/img/thumb-4025.jpg" alt="Maples lit up on an autumn evening" loading="lazy" /></button>
     <button class="gallery__item" data-full="assets/img/photo-5084.jpg" data-cap="Tall pines along the trail"><img src="assets/img/thumb-5084.jpg" alt="Tall pines along the trail" loading="lazy" /></button>
-    <button class="gallery__item" data-full="assets/img/photo-4019.jpg" data-cap="Autumn canopy"><img src="assets/img/thumb-4019.jpg" alt="Red and orange autumn canopy" loading="lazy" /></button>
+    <button class="gallery__item" data-full="assets/img/photo-5081.jpg" data-cap="Iris wetland in early summer"><img src="assets/img/thumb-5081.jpg" alt="Iris wetland with native plants in early summer" loading="lazy" /></button>
     <button class="gallery__item gallery__item--tall" data-full="assets/img/photo-4023.jpg" data-cap="A single maple, illuminated"><img src="assets/img/thumb-4023.jpg" alt="A single maple illuminated at night" loading="lazy" /></button>
     <button class="gallery__item" data-full="assets/img/photo-5085.jpg" data-cap="Green woodland path"><img src="assets/img/thumb-5085.jpg" alt="Green woodland path" loading="lazy" /></button>
     <button class="gallery__item" data-full="assets/img/photo-4021.jpg" data-cap="Light through the canopy"><img src="assets/img/thumb-4021.jpg" alt="Sunlight breaking through the forest canopy" loading="lazy" /></button>
@@ -265,8 +283,8 @@
       </div>
       <div class="detail">
         <h3>Who can join</h3>
-        <p>Minimum age <strong>18</strong></p>
-        <p>Parents may bring children under 2</p>
+        <p><strong>All ages welcome</strong></p>
+        <p>Families and children welcome</p>
       </div>
       <div class="detail">
         <h3>What to bring</h3>
@@ -289,8 +307,8 @@
       <p>Tell me when you'd like to visit and a little about your group. I'll reply personally to confirm availability and arrange the details &mdash; usually within a day.</p>
       <p class="book__alt">Prefer to chat? Message me directly:</p>
       <div class="book__contacts">
-        <a class="btn btn--whatsapp" id="waBtn" href="https://wa.me/810000000000?text=Hi%20Yutaro%2C%20I%27d%20like%20to%20book%20the%20Tokyo%20Nature%20Walk." target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn--ghost-dark" href="mailto:yutaro.shimizu@uni.minerva.edu">Email</a>
+        <a class="btn btn--whatsapp" id="waBtn" href="https://wa.me/16693216467?text=Hi%20Yutaro%2C%20I%27d%20like%20to%20book%20the%20Tokyo%20Nature%20Walk." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--ghost-dark" id="emailBtn" href="#">Email</a>
       </div>
     </div>
 
@@ -385,8 +403,7 @@
     <div class="footer__col">
       <h4>Book</h4>
       <a href="#book">Request a date</a>
-      <a href="mailto:yutaro.shimizu@uni.minerva.edu">Email</a>
-      <a href="#" id="igLink" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" id="waBtnFooter" target="_blank" rel="noopener">WhatsApp</a>
     </div>
     <div class="footer__col">
       <h4>Where we meet</h4>

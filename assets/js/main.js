@@ -1,20 +1,22 @@
 // ---- Config: update these once with your real handles ----
+// Email is split into parts so spam bots can't scrape a plain address from the source.
 const CONFIG = {
-  whatsapp: "810000000000",      // your WhatsApp number, intl format, no "+" (e.g. 8190xxxxxxx)
-  instagram: "tokyonaturewalks", // your Instagram handle, no "@"
-  email: "yutaro.shimizu@uni.minerva.edu"
+  whatsapp: "16693216467",       // your WhatsApp number, intl format, no "+"
+  emailUser: "yutaro.shimizu",   // part before the @
+  emailDomain: "uni.minerva.edu" // part after the @
 };
+CONFIG.email = `${CONFIG.emailUser}@${CONFIG.emailDomain}`;
 
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Instagram link
-const igLink = document.getElementById('igLink');
-if (igLink) igLink.href = `https://instagram.com/${CONFIG.instagram}`;
+// WhatsApp links
+const waHref = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hi Yutaro, I'd like to book the Tokyo Nature Walk.")}`;
+document.querySelectorAll('#waBtn, #waBtnFooter').forEach((el) => { el.href = waHref; });
 
-// WhatsApp link
-const waBtn = document.getElementById('waBtn');
-if (waBtn) waBtn.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hi Yutaro, I'd like to book the Tokyo Nature Walk.")}`;
+// Email button (href set at runtime to avoid a scrapable mailto: in the HTML)
+const emailBtn = document.getElementById('emailBtn');
+if (emailBtn) emailBtn.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Tokyo Nature Walk enquiry")}`;
 
 // Sticky nav state
 const nav = document.getElementById('nav');
