@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tokyonaturewalks.com/sitemap.xml
+Sitemap: https://yutaro-shimizu.github.io/tokyo-nature-walks/sitemap.xml
