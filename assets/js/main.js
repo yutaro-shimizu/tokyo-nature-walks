@@ -2,8 +2,8 @@
 // Email is split into parts so spam bots can't scrape a plain address from the source.
 const CONFIG = {
   whatsapp: "16693216467",       // your WhatsApp number, intl format, no "+"
-  emailUser: "yutaro.shimizu",   // part before the @
-  emailDomain: "uni.minerva.edu" // part after the @
+  emailUser: "shimizufamily123", // part before the @
+  emailDomain: "gmail.com"       // part after the @
 };
 CONFIG.email = `${CONFIG.emailUser}@${CONFIG.emailDomain}`;
 
